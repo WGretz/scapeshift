@@ -1,6 +1,4 @@
-require 'uri'
 require 'nokogiri'
-require 'open-uri'
 
 module Scapeshift
   module Crawlers
@@ -23,16 +21,6 @@ module Scapeshift
       has_callback_hook :before_scrape
       has_callback_hook :after_scrape
       has_callback_hook :every_attr
-
-      ## The details page for cards by multiverse id. Joined with a card's multiverse id.
-      Card_Multiverse_ID_Search_URI = 'http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid='
-
-      ## The base search page for card names. Joined to {Card_Name_Frag}.
-      Card_Name_Search_URI = 'http://gatherer.wizards.com/Pages/Search/Default.aspx?name='
-
-      ## The search fragment for each word in the name. Interpolated
-      ## with each word in the Card name.
-      Card_Name_Frag = '+[%s]'
 
       ## @return [Scapeshift::Card] The {Card} object representing the scraped data
       attr_reader :card
@@ -79,13 +67,13 @@ module Scapeshift
       # @since 0.2.0
       #
       def crawl
-        uri_str = if not self.options[:multiverse_id].nil?
-                    Card_Multiverse_ID_Search_URI + self.options[:multiverse_id].to_s
-                  elsif not self.options[:name].nil?
-                    self.options[:name].split(' ').inject(Card_Name_Search_URI) { |memo, word| memo + (Card_Name_Frag % word) }
-                  end
+        response = if not self.options[:multiverse_id].nil?
+                     GathererAccess.instance.card self.options[:multiverse_id]
+                   elsif not self.options[:name].nil?
+                     GathererAccess.instance.search self.options
+                   end
 
-        @doc = Nokogiri::HTML open(URI.escape uri_str)
+        @doc = Nokogiri::HTML response.body
 
         self.hook :before_scrape, @doc
         

@@ -1,6 +1,5 @@
 require 'set'
 require 'nokogiri'
-require 'open-uri'
 
 module Scapeshift
   module Crawlers
@@ -27,9 +26,6 @@ module Scapeshift
 
       ## @return [SortedSet <String>] The SortedSet containing the scraped data
       attr_reader :meta
-
-      ## The Oracle homepage, which is what we are scraping from
-      Meta_URI = 'http://gatherer.wizards.com/Pages/Default.aspx'
 
       ##
       # Creates a new Meta crawler instance.
@@ -68,7 +64,7 @@ module Scapeshift
       # @since 0.1.0
       #
       def crawl
-        @doc = Nokogiri::HTML open(Meta_URI)
+        @doc = Nokogiri::HTML GathererAccess.instance.homepage.body
        
         self.hook :before_scrape, @doc
 

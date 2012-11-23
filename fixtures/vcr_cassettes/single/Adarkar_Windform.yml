@@ -2,11 +2,13 @@
 http_interactions: 
 - request: 
     method: get
-    uri: http://gatherer.wizards.com/Pages/Search/Default.aspx?name=+[Adarkar]+[Windform]
+    uri: http://gatherer.wizards.com/Pages/Search/Default.aspx?name=%2B%5B%22Adarkar+Windform%22%5D
     body: 
       encoding: US-ASCII
       string: ""
     headers: 
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept: 
       - "*/*"
       user-agent: 
@@ -17,7 +19,7 @@ http_interactions:
       message: Found
     headers: 
       date: 
-      - Sat, 17 Nov 2012 17:18:17 GMT
+      - Fri, 23 Nov 2012 22:31:29 GMT
       server: 
       - Microsoft-IIS/6.0
       x-powered-by: 
@@ -27,11 +29,11 @@ http_interactions:
       location: 
       - /Pages/Card/Details.aspx?multiverseid=121268
       set-cookie: 
-      - ASP.NET_SessionId=yi4m3vmprvtk3r554cbt04mq; path=/; HttpOnly
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:17 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:17 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:17 GMT; path=/
-      - BIGipServerWWWNetPool02=2232420618.20480.0000; path=/
+      - ASP.NET_SessionId=hvelnkndfvgxf345bbgd0y45; path=/; HttpOnly
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:29 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:29 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:29 GMT; path=/
+      - BIGipServerWWWNetPool02=2517633290.20480.0000; path=/
       cache-control: 
       - private
       content-type: 
@@ -46,7 +48,7 @@ http_interactions:
         </body></html>
 
     http_version: "1.1"
-  recorded_at: Sat, 17 Nov 2012 17:18:17 GMT
+  recorded_at: Fri, 23 Nov 2012 22:31:30 GMT
 - request: 
     method: get
     uri: http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=121268
@@ -54,6 +56,8 @@ http_interactions:
       encoding: US-ASCII
       string: ""
     headers: 
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept: 
       - "*/*"
       user-agent: 
@@ -64,7 +68,7 @@ http_interactions:
       message: OK
     headers: 
       date: 
-      - Sat, 17 Nov 2012 17:18:18 GMT
+      - Fri, 23 Nov 2012 22:31:29 GMT
       server: 
       - Microsoft-IIS/6.0
       x-powered-by: 
@@ -72,11 +76,11 @@ http_interactions:
       x-aspnet-version: 
       - 2.0.50727
       set-cookie: 
-      - ASP.NET_SessionId=avixjiamq3jqw3451k25epyh; path=/; HttpOnly
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:17 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:17 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:17 GMT; path=/
-      - BIGipServerWWWNetPool02=2232420618.20480.0000; path=/
+      - ASP.NET_SessionId=f1ocpb2nxpgejl55b5wnzr45; path=/; HttpOnly
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:29 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:29 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:29 GMT; path=/
+      - BIGipServerWWWNetPool02=2769291530.20480.0000; path=/
       cache-control: 
       - private
       content-type: 
@@ -268,7 +272,7 @@ http_interactions:
         //]]>\r\n\
         </script>\r\n\
         \r\n\
-        <input type=\"hidden\" name=\"__EVENTVALIDATION\" id=\"__EVENTVALIDATION\" value=\"/wEWBgKBx/f1CgKw+7DyCgKKqPSlCQLIiJiWCgLgiMDeAwKBjNExzlwNG+VjazOiCGcrd1YqUcDjdvo=\" />\r\n    <div style=\"width: 100%; height: 1px;\">\r\n    </div>\r\n    <div id=\"ctl00_ctl00_ctl00_MainContainer\" class=\"mainContainer\">\r\n        <div class=\"leftContainer\">\r\n            <div id=\"ctl00_ctl00_ctl00_TopBannerAdvertisementCMS\" class=\"topBanner\"><body docname=\"mtg_gatherer_banner_advertisement\" doclang=\"en\" xmlPath=\"\" useDate=\"11/17/2012\">\r\n  <a href=\"http://www.wizards.com/Magic/tcg/events.aspx?x=events/magic/fnm\" target=\"_blank\">\r\n    <img src=\"http://media.wizards.com/images/magic/daily/ads/20121029_fnm_728.jpg\" />\r\n  </a>\r\n\
+        <input type=\"hidden\" name=\"__EVENTVALIDATION\" id=\"__EVENTVALIDATION\" value=\"/wEWBgKBx/f1CgKw+7DyCgKKqPSlCQLIiJiWCgLgiMDeAwKBjNExzlwNG+VjazOiCGcrd1YqUcDjdvo=\" />\r\n    <div style=\"width: 100%; height: 1px;\">\r\n    </div>\r\n    <div id=\"ctl00_ctl00_ctl00_MainContainer\" class=\"mainContainer\">\r\n        <div class=\"leftContainer\">\r\n            <div id=\"ctl00_ctl00_ctl00_TopBannerAdvertisementCMS\" class=\"topBanner\"><body docname=\"mtg_gatherer_banner_advertisement\" doclang=\"en\" xmlPath=\"\" useDate=\"11/23/2012\">\r\n  <a href=\"http://www.wizards.com/Magic/tcg/events.aspx?x=events/magic/fnm\" target=\"_blank\">\r\n    <img src=\"http://media.wizards.com/images/magic/daily/ads/20121029_fnm_728.jpg\" />\r\n  </a>\r\n\
         </body></div>\r\n            <div class=\"background\">\r\n                <div class=\"top\">\r\n                    <div class=\"left\">\r\n                    </div>\r\n                    <div class=\"middle\">\r\n                    </div>\r\n                    <div class=\"right\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"center\">\r\n                    <div class=\"middle\">\r\n                        <div class=\"middleright\">\r\n                            <div class=\"gathererContent\">\r\n                                \r\n\
         \r\n\
         <div class=\"logo\">\r\n    <a class=\"magic\" href=\"http://www.magicthegathering.com\"></a>\r\n\
@@ -303,5 +307,5 @@ http_interactions:
         </body>\r\n\
         </html>\r\n"
     http_version: "1.1"
-  recorded_at: Sat, 17 Nov 2012 17:18:18 GMT
+  recorded_at: Fri, 23 Nov 2012 22:31:30 GMT
 recorded_with: VCR 2.3.0

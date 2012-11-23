@@ -2,11 +2,13 @@
 http_interactions: 
 - request: 
     method: get
-    uri: http://gatherer.wizards.com/Pages/Search/Default.aspx?name=+[fuck]
+    uri: http://gatherer.wizards.com/Pages/Search/Default.aspx?name=%2B%5B%22fuck%22%5D
     body: 
       encoding: US-ASCII
       string: ""
     headers: 
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept: 
       - "*/*"
       user-agent: 
@@ -17,7 +19,7 @@ http_interactions:
       message: OK
     headers: 
       date: 
-      - Sat, 17 Nov 2012 17:18:24 GMT
+      - Fri, 23 Nov 2012 22:31:37 GMT
       server: 
       - Microsoft-IIS/6.0
       x-powered-by: 
@@ -25,17 +27,17 @@ http_interactions:
       x-aspnet-version: 
       - 2.0.50727
       set-cookie: 
-      - ASP.NET_SessionId=uxswlr45neb0ndq2pyxp4qnt; path=/; HttpOnly
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:24 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:24 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:24 GMT; path=/
+      - ASP.NET_SessionId=0ysqw155kit4ns55zttpszvm; path=/; HttpOnly
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:36 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:36 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:36 GMT; path=/
       - BIGipServerWWWNetPool02=2500856074.20480.0000; path=/
       cache-control: 
       - private
       content-type: 
       - text/html; charset=utf-8
       content-length: 
-      - "19879"
+      - "19488"
     body: 
       encoding: US-ASCII
       string: |
@@ -46,7 +48,7 @@ http_interactions:
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
         <html xmlns="http://www.w3.org/1999/xhtml">
         <head><title>
-        	Card Search - Search: +fuck - Gatherer - Magic: The Gathering
+        	Card Search - Search: +"fuck" - Gatherer - Magic: The Gathering
         </title><link rel="shortcut icon" href="/Images/favicon.ico" /><meta name="description" content="Gatherer is the Magic Card Database. Search for the perfect addition to your deck. Browse through cards from Magic's entire history. See cards from the most recent sets and discover what players just like you are saying about them." /><meta name="keywords" content="monitor, gatherer, magic cards, magic the gathering, black lotus, magic: the gathering, wizards of the coast, wizards, trading card game, trading cards, collectible card game, tcg, ccg, magic sets, game, multiplayer, hobby" />
             
             <!-- google analytics -->
@@ -65,7 +67,7 @@ http_interactions:
         <body>
             
         
-            <form name="aspnetForm" method="post" action="Default.aspx?name=+%5bfuck%5d" id="aspnetForm">
+            <form name="aspnetForm" method="post" action="Default.aspx?name=%2b%5b%22fuck%22%5d" id="aspnetForm">
         <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyMjI5ODM3NzhkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYDBTtjdGwwMCRjdGwwMCRjdGwwMCRNYWluQ29udGVudCRTZWFyY2hDb250cm9scyRTZWFyY2hDYXJkTmFtZQU8Y3RsMDAkY3RsMDAkY3RsMDAkTWFpbkNvbnRlbnQkU2VhcmNoQ29udHJvbHMkU2VhcmNoQ2FyZFR5cGVzBTtjdGwwMCRjdGwwMCRjdGwwMCRNYWluQ29udGVudCRTZWFyY2hDb250cm9scyRTZWFyY2hDYXJkVGV4dD0NS4S5r9zRScS2OJsvcAmvOCzV" />
         
         
@@ -173,7 +175,7 @@ http_interactions:
             </div>
             <div id="ctl00_ctl00_ctl00_MainContainer" class="mainContainer">
                 <div class="leftContainer">
-                    <div id="ctl00_ctl00_ctl00_TopBannerAdvertisementCMS" class="topBanner"><body docname="mtg_gatherer_banner_advertisement" doclang="en" xmlPath="" useDate="11/17/2012">
+                    <div id="ctl00_ctl00_ctl00_TopBannerAdvertisementCMS" class="topBanner"><body docname="mtg_gatherer_banner_advertisement" doclang="zh" xmlPath="" useDate="2012/11/23">
           <a href="http://www.wizards.com/Magic/tcg/events.aspx?x=events/magic/fnm" target="_blank">
             <img src="http://media.wizards.com/images/magic/daily/ads/20121029_fnm_728.jpg" />
           </a>
@@ -269,7 +271,7 @@ http_interactions:
                     <div class="simpleRoundedBoxTitleGreyTall">
                         <div class="contentTitle">
                             
-        Search:<span id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContentHeader_searchTermDisplay"><i>+fuck</i>  (0)</span>
+        Search:<span id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContentHeader_searchTermDisplay"><i>+"fuck"</i>  (0)</span>
         
                         </div>
                         
@@ -301,8 +303,8 @@ http_interactions:
             <div id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_searchResultsContainer"></div>
             
             <div id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_DidYouMean">
-                <div class="text"><p>Your search returned zero results; click <a href="/Pages/Advanced.aspx?name=+[fuck]">here if you would like to refine it</a>. <b>Did you mean one of the following names:</b></p></div>
-                <ul id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_DidYouMeanCandidates"><li><a href="/Pages/Search/Default.aspx?action=advanced&name=+[luck]">luck</a></li><li><a href="/Pages/Search/Default.aspx?action=advanced&name=+[muck]">muck</a></li><li><a href="/Pages/Search/Default.aspx?action=advanced&name=+[lunk]">lunk</a></li><li><a href="/Pages/Search/Default.aspx?action=advanced&name=+[much]">much</a></li><li><a href="/Pages/Search/Default.aspx?action=advanced&name=+[murk]">murk</a></li></ul>
+                <div class="text"><p>Your search returned zero results; click <a href="/Pages/Advanced.aspx?name=+["fuck"]">here if you would like to refine it</a>. Please check your search terms and try again.</p></div>
+                <ul id="ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_DidYouMeanCandidates"></ul>
             </div>
         
                     <div class="clear"></div>
@@ -332,7 +334,7 @@ http_interactions:
                         <a href="http://www.wizards.com/magic/Digital/MagicOnline.aspx">Magic: The Gathering
                             Online</a>&nbsp;&nbsp; <a href="../Settings.aspx">Settings</a>&nbsp;&nbsp;
                         <a href="../Language.aspx">Language</a>&nbsp;&nbsp; <a href="../Help.aspx">Help</a>&nbsp;|&nbsp;
-                            <a href="../Login.aspx?returnurl=%2fPages%2fSearch%2fDefault.aspx%3fname%3d%2b%255Bfuck%255D">Login</a>
+                            <a href="../Login.aspx?returnurl=%2fPages%2fSearch%2fDefault.aspx%3fname%3d%252B%255B%2522fuck%2522%255D">Login</a>
                         <div class="wizardsFooterSection">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy; 1995 - 2012 <a href="http://www.wizards.com">Wizards of the Coast</a> LLC,
                             a subsidiary of Hasbro, Inc. All Rights Reserved.
@@ -350,5 +352,5 @@ http_interactions:
         </html>
 
     http_version: "1.1"
-  recorded_at: Sat, 17 Nov 2012 17:18:25 GMT
+  recorded_at: Fri, 23 Nov 2012 22:31:37 GMT
 recorded_with: VCR 2.3.0

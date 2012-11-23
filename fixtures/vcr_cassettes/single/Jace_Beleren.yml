@@ -2,11 +2,13 @@
 http_interactions: 
 - request: 
     method: get
-    uri: http://gatherer.wizards.com/Pages/Search/Default.aspx?name=+[Jace]+[Beleren]
+    uri: http://gatherer.wizards.com/Pages/Search/Default.aspx?name=%2B%5B%22Jace+Beleren%22%5D
     body: 
       encoding: US-ASCII
       string: ""
     headers: 
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept: 
       - "*/*"
       user-agent: 
@@ -17,7 +19,7 @@ http_interactions:
       message: Found
     headers: 
       date: 
-      - Sat, 17 Nov 2012 17:18:20 GMT
+      - Fri, 23 Nov 2012 22:31:32 GMT
       server: 
       - Microsoft-IIS/6.0
       x-powered-by: 
@@ -27,10 +29,10 @@ http_interactions:
       location: 
       - /Pages/Card/Details.aspx?multiverseid=205960
       set-cookie: 
-      - ASP.NET_SessionId=zaivzb55124on445mb0xd2ai; path=/; HttpOnly
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:20 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:20 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:20 GMT; path=/
+      - ASP.NET_SessionId=ergpoa2uomyg1455pgfg3max; path=/; HttpOnly
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:32 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:32 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:32 GMT; path=/
       - BIGipServerWWWNetPool02=4178577674.20480.0000; path=/
       cache-control: 
       - private
@@ -46,7 +48,7 @@ http_interactions:
         </body></html>
 
     http_version: "1.1"
-  recorded_at: Sat, 17 Nov 2012 17:18:21 GMT
+  recorded_at: Fri, 23 Nov 2012 22:31:33 GMT
 - request: 
     method: get
     uri: http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=205960
@@ -54,6 +56,8 @@ http_interactions:
       encoding: US-ASCII
       string: ""
     headers: 
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept: 
       - "*/*"
       user-agent: 
@@ -64,7 +68,7 @@ http_interactions:
       message: OK
     headers: 
       date: 
-      - Sat, 17 Nov 2012 17:18:21 GMT
+      - Fri, 23 Nov 2012 22:31:33 GMT
       server: 
       - Microsoft-IIS/6.0
       x-powered-by: 
@@ -72,17 +76,17 @@ http_interactions:
       x-aspnet-version: 
       - 2.0.50727
       set-cookie: 
-      - ASP.NET_SessionId=ywkn4d45c0tvvjqt3m2mfbub; path=/; HttpOnly
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:21 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:21 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:21 GMT; path=/
-      - BIGipServerWWWNetPool02=2500856074.20480.0000; path=/
+      - ASP.NET_SessionId=ci3zjkqsvkowo4rmw3qmowmc; path=/; HttpOnly
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:33 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:33 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:33 GMT; path=/
+      - BIGipServerWWWNetPool02=2232420618.20480.0000; path=/
       cache-control: 
       - private
       content-type: 
       - text/html; charset=utf-8
       content-length: 
-      - "38881"
+      - "38929"
     body: 
       encoding: ASCII-8BIT
       string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n\
@@ -94,7 +98,7 @@ http_interactions:
         <head><title>\r\n\
         \tJace Beleren (Magic 2011) - Gatherer - Magic: The Gathering\r\n\
         </title><link rel=\"shortcut icon\" href=\"/Images/favicon.ico\" /><meta name=\"description\" content=\"Gatherer is the Magic Card Database. Search for the perfect addition to your deck. Browse through cards from Magic's entire history. See cards from the most recent sets and discover what players just like you are saying about them.\" /><meta name=\"keywords\" content=\"monitor, gatherer, magic cards, magic the gathering, black lotus, magic: the gathering, wizards of the coast, wizards, trading card game, trading cards, collectible card game, tcg, ccg, magic sets, game, multiplayer, hobby\" />\r\n    \r\n    <!-- google analytics -->\r\n    <script type=\"text/javascript\">\r\n    var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");\r\n    document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\r\n    </script>\r\n    <script type=\"text/javascript\">\r\n    try {\r\n    var pageTracker = _gat._getTracker(\"UA-15020098-7\");\r\n    pageTracker._setDomainName(\".wizards.com\");\r\n    pageTracker._trackPageview();\r\n    } catch(err) {}\r\n    </script>\r\n\
-        <link type=\"text/css\" rel=\"stylesheet\" media=\"screen\" href=\"../../Styles/Styles.css\" /><link href=\"/WebResource.axd?d=GRnNg3t4K46DgrIFhLf_9NAuUGNb9hPC5E3VRvvs03EEanuwjppIYb1ygZbulkgS4u5w9pKS9Yy4Yj6i6DYt9MPjPepf71AnWzo4xZTSDC41&amp;amp;t=634873966152854778\" rel=\"icon\" type=\"image/ico\" /></head>\r\n\
+        <link type=\"text/css\" rel=\"stylesheet\" media=\"screen\" href=\"../../Styles/Styles.css\" /><link href=\"/WebResource.axd?d=or7PpBsqDI3hlaEEThlmVDRzePzSrFyHvCSdTElIIm8jbPXP5PySeVoGjKlN7Df_R8Yrdfm8DAtAevqXp4wu4Fffv7Dmtd4mn4Xjxa7bf43SyevX1NnB9KBh--rFBOmlJp3lTErOKCK5IJhfE-mweMernyA1&amp;amp;t=634873966152854778\" rel=\"icon\" type=\"image/ico\" /></head>\r\n\
         <body>\r\n    \r\n\
         \r\n    <form name=\"aspnetForm\" method=\"post\" action=\"Details.aspx?multiverseid=205960\" id=\"aspnetForm\">\r\n\
         <input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTQxOTY5NzI3NGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgMFO2N0bDAwJGN0bDAwJGN0bDAwJE1haW5Db250ZW50JFNlYXJjaENvbnRyb2xzJFNlYXJjaENhcmROYW1lBTxjdGwwMCRjdGwwMCRjdGwwMCRNYWluQ29udGVudCRTZWFyY2hDb250cm9scyRTZWFyY2hDYXJkVHlwZXMFO2N0bDAwJGN0bDAwJGN0bDAwJE1haW5Db250ZW50JFNlYXJjaENvbnRyb2xzJFNlYXJjaENhcmRUZXh08eaAgh/v97psiSof7KwBwiyoYMg=\" />\r\n\
@@ -270,7 +274,7 @@ http_interactions:
         //]]>\r\n\
         </script>\r\n\
         \r\n\
-        <input type=\"hidden\" name=\"__EVENTVALIDATION\" id=\"__EVENTVALIDATION\" value=\"/wEWBgKBx/f1CgKw+7DyCgKKqPSlCQLIiJiWCgLgiMDeAwKBjNExzlwNG+VjazOiCGcrd1YqUcDjdvo=\" />\r\n    <div style=\"width: 100%; height: 1px;\">\r\n    </div>\r\n    <div id=\"ctl00_ctl00_ctl00_MainContainer\" class=\"mainContainer\">\r\n        <div class=\"leftContainer\">\r\n            <div id=\"ctl00_ctl00_ctl00_TopBannerAdvertisementCMS\" class=\"topBanner\"><body docname=\"mtg_gatherer_banner_advertisement\" doclang=\"en\" xmlPath=\"\" useDate=\"11/17/2012\">\r\n  <a href=\"http://www.wizards.com/Magic/tcg/events.aspx?x=events/magic/fnm\" target=\"_blank\">\r\n    <img src=\"http://media.wizards.com/images/magic/daily/ads/20121029_fnm_728.jpg\" />\r\n  </a>\r\n\
+        <input type=\"hidden\" name=\"__EVENTVALIDATION\" id=\"__EVENTVALIDATION\" value=\"/wEWBgKBx/f1CgKw+7DyCgKKqPSlCQLIiJiWCgLgiMDeAwKBjNExzlwNG+VjazOiCGcrd1YqUcDjdvo=\" />\r\n    <div style=\"width: 100%; height: 1px;\">\r\n    </div>\r\n    <div id=\"ctl00_ctl00_ctl00_MainContainer\" class=\"mainContainer\">\r\n        <div class=\"leftContainer\">\r\n            <div id=\"ctl00_ctl00_ctl00_TopBannerAdvertisementCMS\" class=\"topBanner\"><body docname=\"mtg_gatherer_banner_advertisement\" doclang=\"en\" xmlPath=\"\" useDate=\"11/23/2012\">\r\n  <a href=\"http://www.wizards.com/Magic/tcg/events.aspx?x=events/magic/fnm\" target=\"_blank\">\r\n    <img src=\"http://media.wizards.com/images/magic/daily/ads/20121029_fnm_728.jpg\" />\r\n  </a>\r\n\
         </body></div>\r\n            <div class=\"background\">\r\n                <div class=\"top\">\r\n                    <div class=\"left\">\r\n                    </div>\r\n                    <div class=\"middle\">\r\n                    </div>\r\n                    <div class=\"right\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"center\">\r\n                    <div class=\"middle\">\r\n                        <div class=\"middleright\">\r\n                            <div class=\"gathererContent\">\r\n                                \r\n\
         \r\n\
         <div class=\"logo\">\r\n    <a class=\"magic\" href=\"http://www.magicthegathering.com\"></a>\r\n\
@@ -294,7 +298,7 @@ http_interactions:
         \t<a href=\"Details.aspx?multiverseid=205960\"><img title=\"Magic 2011 (Mythic Rare)\" src=\"../../Handlers/Image.ashx?type=symbol&amp;set=M11&amp;size=small&amp;rarity=M\" alt=\"Magic 2011 (Mythic Rare)\" align=\"absmiddle\" border=\"0\" /></a>\r\n                                <a href=\"/Pages/Search/Default.aspx?action=advanced&amp;set=[%22Magic 2011%22]\">Magic 2011</a>\r\n                            \r\n\
         </div>\r\n                        </div>\r\n                    </div>\r\n                    <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_rarityRow\" class=\"row\">\r\n                        <div class=\"label\">\r\n                            Rarity:</div>\r\n                        <div class=\"value\">\r\n                            <span class='mythic'>Mythic Rare</span></div>\r\n                    </div>\r\n                    <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_otherSetsRow\" class=\"row\">\r\n                        <div class=\"label\">\r\n                            All Sets:</div>\r\n                        <div class=\"value\">\r\n                            <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_otherSetsValue\">\r\n\
         \t\r\n                            <a href=\"Details.aspx?multiverseid=191240\"><img title=\"Magic 2010 (Mythic Rare)\" src=\"../../Handlers/Image.ashx?type=symbol&amp;set=M10&amp;size=small&amp;rarity=M\" alt=\"Magic 2010 (Mythic Rare)\" align=\"absmiddle\" border=\"0\" /></a><a href=\"Details.aspx?multiverseid=205960\"><img title=\"Magic 2011 (Mythic Rare)\" src=\"../../Handlers/Image.ashx?type=symbol&amp;set=M11&amp;size=small&amp;rarity=M\" alt=\"Magic 2011 (Mythic Rare)\" align=\"absmiddle\" border=\"0\" /></a><a href=\"Details.aspx?multiverseid=140222\"><img title=\"Lorwyn (Rare)\" src=\"../../Handlers/Image.ashx?type=symbol&amp;set=LRW&amp;size=small&amp;rarity=R\" alt=\"Lorwyn (Rare)\" align=\"absmiddle\" border=\"0\" /></a><a href=\"Details.aspx?multiverseid=185816\"><img title=\"Duel Decks: Jace vs. Chandra (Mythic Rare)\" src=\"../../Handlers/Image.ashx?type=symbol&amp;set=DD2&amp;size=small&amp;rarity=M\" alt=\"Duel Decks: Jace vs. Chandra (Mythic Rare)\" align=\"absmiddle\" border=\"0\" /></a>\r\n\
-        </div>\r\n                        </div>\r\n                    </div>\r\n                    <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_numberRow\" class=\"row\">\r\n                        <div class=\"label\">\r\n                            Card #:</div>\r\n                        <div class=\"value\">\r\n                            58</div>\r\n                    </div>\r\n                    <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_artistRow\" class=\"row\">\r\n                        <div class=\"label\">\r\n                            Artist:</div>\r\n                        <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ArtistCredit\" class=\"value\">\r\n                            <a href=\"/Pages/Search/Default.aspx?action=advanced&amp;artist=[%22Aleksi Briclot%22]\">Aleksi Briclot</a></div>\r\n                    </div>\r\n                    <b class=\"ff\"><b></b></b>\r\n                </div>\r\n                <div class=\"smallGreyMono\" style=\"margin-top: 10px;\">\r\n                    <b class=\"ft\"><b></b></b>\r\n                    <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_playerRatingRow\" class=\"row\">\r\n                        <div class=\"label\" style=\"width:127px; line-height:30px;\">\r\n                            Community Rating:</div>\r\n                        <div class=\"value\">\r\n                            <span id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ratingResult\" class=\"ratingResult\" style=\"float:right; padding-right:100px; padding-top: 5px; position:relative;\"></span>\r\n                            <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_currentRating_starRating\" class=\"starRating\"><img src=\"../../Images/Stars/LeftSolid.gif\" alt=\"0.5\" /><img src=\"../../Images/Stars/RightSolid.gif\" alt=\"1.0\" /><img src=\"../../Images/Stars/LeftSolid.gif\" alt=\"1.5\" /><img src=\"../../Images/Stars/RightSolid.gif\" alt=\"2.0\" /><img src=\"../../Images/Stars/LeftSolid.gif\" alt=\"2.5\" /><img src=\"../../Images/Stars/RightSolid.gif\" alt=\"3.0\" /><img src=\"../../Images/Stars/LeftSolid.gif\" alt=\"3.5\" /><img src=\"../../Images/Stars/RightSolid.gif\" alt=\"4.0\" /><img src=\"../../Images/Stars/LeftClear.gif\" alt=\"4.5\" /><img src=\"../../Images/Stars/RightClear.gif\" alt=\"5.0\" />\r\n    <br/>\r\n    <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_currentRating_textRatingContainer\" class=\"textRating\">\r\n        Rating: <span id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_currentRating_textRating\" class=\"textRatingValue\">4.002</span> / 5&nbsp;&nbsp;(<span id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_currentRating_totalVotes\" class=\"totalVotesValue\">286</span><span id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_currentRating_extraVoteInfo\"> votes</span>)</div>\r\n\
+        </div>\r\n                        </div>\r\n                    </div>\r\n                    <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_numberRow\" class=\"row\">\r\n                        <div class=\"label\">\r\n                            Card #:</div>\r\n                        <div class=\"value\">\r\n                            58</div>\r\n                    </div>\r\n                    <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_artistRow\" class=\"row\">\r\n                        <div class=\"label\">\r\n                            Artist:</div>\r\n                        <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ArtistCredit\" class=\"value\">\r\n                            <a href=\"/Pages/Search/Default.aspx?action=advanced&amp;artist=[%22Aleksi Briclot%22]\">Aleksi Briclot</a></div>\r\n                    </div>\r\n                    <b class=\"ff\"><b></b></b>\r\n                </div>\r\n                <div class=\"smallGreyMono\" style=\"margin-top: 10px;\">\r\n                    <b class=\"ft\"><b></b></b>\r\n                    <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_playerRatingRow\" class=\"row\">\r\n                        <div class=\"label\" style=\"width:127px; line-height:30px;\">\r\n                            Community Rating:</div>\r\n                        <div class=\"value\">\r\n                            <span id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_ratingResult\" class=\"ratingResult\" style=\"float:right; padding-right:100px; padding-top: 5px; position:relative;\"></span>\r\n                            <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_currentRating_starRating\" class=\"starRating\"><img src=\"../../Images/Stars/LeftSolid.gif\" alt=\"0.5\" /><img src=\"../../Images/Stars/RightSolid.gif\" alt=\"1.0\" /><img src=\"../../Images/Stars/LeftSolid.gif\" alt=\"1.5\" /><img src=\"../../Images/Stars/RightSolid.gif\" alt=\"2.0\" /><img src=\"../../Images/Stars/LeftSolid.gif\" alt=\"2.5\" /><img src=\"../../Images/Stars/RightSolid.gif\" alt=\"3.0\" /><img src=\"../../Images/Stars/LeftSolid.gif\" alt=\"3.5\" /><img src=\"../../Images/Stars/RightSolid.gif\" alt=\"4.0\" /><img src=\"../../Images/Stars/LeftClear.gif\" alt=\"4.5\" /><img src=\"../../Images/Stars/RightClear.gif\" alt=\"5.0\" />\r\n    <br/>\r\n    <div id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_currentRating_textRatingContainer\" class=\"textRating\">\r\n        Rating: <span id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_currentRating_textRating\" class=\"textRatingValue\">4.005</span> / 5&nbsp;&nbsp;(<span id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_currentRating_totalVotes\" class=\"totalVotesValue\">288</span><span id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_currentRating_extraVoteInfo\"> votes</span>)</div>\r\n\
         </div>\r\n\
         \r\n                        </div>\r\n                    </div>\r\n                    <div style=\"padding-left: 5px; font-size:.85em;\">\r\n                        Click <a href=\"/Pages/Card/Discussion.aspx?multiverseid=205960\" id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_discussionLink\">here</a> to <b>rate</b> and\r\n                        <b>discuss</b> this card.</div>\r\n                    <b class=\"ff\"><b></b></b>\r\n                </div>\r\n            </td>\r\n\
         \r\n        </tr>\r\n        <tr id=\"ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_rulingsRow\">\r\n\
@@ -312,5 +316,5 @@ http_interactions:
         </body>\r\n\
         </html>\r\n"
     http_version: "1.1"
-  recorded_at: Sat, 17 Nov 2012 17:18:21 GMT
+  recorded_at: Fri, 23 Nov 2012 22:31:34 GMT
 recorded_with: VCR 2.3.0
