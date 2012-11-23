@@ -343,7 +343,7 @@ module Scapeshift
       #
       # @param [Nokogiri::HTML::Document] doc The detail page document
       #
-      # @return [String] The mutliverse ID of this card
+      # @return [String] The card number of this card
       #
       # @author Eric Cohen
       #
