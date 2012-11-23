@@ -2,11 +2,13 @@
 http_interactions: 
 - request: 
     method: get
-    uri: http://gatherer.wizards.com/Pages/Search/Default.aspx?name=+[Akroma,]+[Angel]+[of]+[Wrath]
+    uri: http://gatherer.wizards.com/Pages/Search/Default.aspx?name=%2B%5B%22Akroma%2C+Angel+of+Wrath%22%5D
     body: 
       encoding: US-ASCII
       string: ""
     headers: 
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept: 
       - "*/*"
       user-agent: 
@@ -17,7 +19,7 @@ http_interactions:
       message: Found
     headers: 
       date: 
-      - Sat, 17 Nov 2012 17:18:21 GMT
+      - Fri, 23 Nov 2012 22:31:34 GMT
       server: 
       - Microsoft-IIS/6.0
       x-powered-by: 
@@ -27,11 +29,11 @@ http_interactions:
       location: 
       - /Pages/Card/Details.aspx?multiverseid=193871
       set-cookie: 
-      - ASP.NET_SessionId=mbqy1jbvk1yp0455mhlrnt3n; path=/; HttpOnly
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:21 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:21 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:21 GMT; path=/
-      - BIGipServerWWWNetPool02=2500856074.20480.0000; path=/
+      - ASP.NET_SessionId=32yj4fmlguqn5qy4dqabpba2; path=/; HttpOnly
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:34 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:34 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:34 GMT; path=/
+      - BIGipServerWWWNetPool02=2232420618.20480.0000; path=/
       cache-control: 
       - private
       content-type: 
@@ -46,7 +48,7 @@ http_interactions:
         </body></html>
 
     http_version: "1.1"
-  recorded_at: Sat, 17 Nov 2012 17:18:22 GMT
+  recorded_at: Fri, 23 Nov 2012 22:31:35 GMT
 - request: 
     method: get
     uri: http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=193871
@@ -54,6 +56,8 @@ http_interactions:
       encoding: US-ASCII
       string: ""
     headers: 
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept: 
       - "*/*"
       user-agent: 
@@ -64,7 +68,7 @@ http_interactions:
       message: OK
     headers: 
       date: 
-      - Sat, 17 Nov 2012 17:18:22 GMT
+      - Fri, 23 Nov 2012 22:31:35 GMT
       server: 
       - Microsoft-IIS/6.0
       x-powered-by: 
@@ -72,17 +76,17 @@ http_interactions:
       x-aspnet-version: 
       - 2.0.50727
       set-cookie: 
-      - ASP.NET_SessionId=amuealz1oedho045ntquj4qn; path=/; HttpOnly
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:22 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:22 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:22 GMT; path=/
-      - BIGipServerWWWNetPool02=2232420618.20480.0000; path=/
+      - ASP.NET_SessionId=otqjk2r4eo3wpz45ixdsqz55; path=/; HttpOnly
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:35 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:35 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:35 GMT; path=/
+      - BIGipServerWWWNetPool02=2500856074.20480.0000; path=/
       cache-control: 
       - private
       content-type: 
       - text/html; charset=utf-8
       content-length: 
-      - "37208"
+      - "37160"
     body: 
       encoding: ASCII-8BIT
       string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n\
@@ -94,7 +98,7 @@ http_interactions:
         <head><title>\r\n\
         \tAkroma, Angel of Wrath (Duel Decks: Divine vs. Demonic) - Gatherer - Magic: The Gathering\r\n\
         </title><link rel=\"shortcut icon\" href=\"/Images/favicon.ico\" /><meta name=\"description\" content=\"Gatherer is the Magic Card Database. Search for the perfect addition to your deck. Browse through cards from Magic's entire history. See cards from the most recent sets and discover what players just like you are saying about them.\" /><meta name=\"keywords\" content=\"monitor, gatherer, magic cards, magic the gathering, black lotus, magic: the gathering, wizards of the coast, wizards, trading card game, trading cards, collectible card game, tcg, ccg, magic sets, game, multiplayer, hobby\" />\r\n    \r\n    <!-- google analytics -->\r\n    <script type=\"text/javascript\">\r\n    var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");\r\n    document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\r\n    </script>\r\n    <script type=\"text/javascript\">\r\n    try {\r\n    var pageTracker = _gat._getTracker(\"UA-15020098-7\");\r\n    pageTracker._setDomainName(\".wizards.com\");\r\n    pageTracker._trackPageview();\r\n    } catch(err) {}\r\n    </script>\r\n\
-        <link type=\"text/css\" rel=\"stylesheet\" media=\"screen\" href=\"../../Styles/Styles.css\" /><link href=\"/WebResource.axd?d=or7PpBsqDI3hlaEEThlmVDRzePzSrFyHvCSdTElIIm8jbPXP5PySeVoGjKlN7Df_R8Yrdfm8DAtAevqXp4wu4Fffv7Dmtd4mn4Xjxa7bf43SyevX1NnB9KBh--rFBOmlJp3lTErOKCK5IJhfE-mweMernyA1&amp;amp;t=634873966152854778\" rel=\"icon\" type=\"image/ico\" /></head>\r\n\
+        <link type=\"text/css\" rel=\"stylesheet\" media=\"screen\" href=\"../../Styles/Styles.css\" /><link href=\"/WebResource.axd?d=GRnNg3t4K46DgrIFhLf_9NAuUGNb9hPC5E3VRvvs03EEanuwjppIYb1ygZbulkgS4u5w9pKS9Yy4Yj6i6DYt9MPjPepf71AnWzo4xZTSDC41&amp;amp;t=634873966152854778\" rel=\"icon\" type=\"image/ico\" /></head>\r\n\
         <body>\r\n    \r\n\
         \r\n    <form name=\"aspnetForm\" method=\"post\" action=\"Details.aspx?multiverseid=193871\" id=\"aspnetForm\">\r\n\
         <input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTQxOTY5NzI3NGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgMFO2N0bDAwJGN0bDAwJGN0bDAwJE1haW5Db250ZW50JFNlYXJjaENvbnRyb2xzJFNlYXJjaENhcmROYW1lBTxjdGwwMCRjdGwwMCRjdGwwMCRNYWluQ29udGVudCRTZWFyY2hDb250cm9scyRTZWFyY2hDYXJkVHlwZXMFO2N0bDAwJGN0bDAwJGN0bDAwJE1haW5Db250ZW50JFNlYXJjaENvbnRyb2xzJFNlYXJjaENhcmRUZXh08eaAgh/v97psiSof7KwBwiyoYMg=\" />\r\n\
@@ -268,7 +272,7 @@ http_interactions:
         //]]>\r\n\
         </script>\r\n\
         \r\n\
-        <input type=\"hidden\" name=\"__EVENTVALIDATION\" id=\"__EVENTVALIDATION\" value=\"/wEWBgKBx/f1CgKw+7DyCgKKqPSlCQLIiJiWCgLgiMDeAwKBjNExzlwNG+VjazOiCGcrd1YqUcDjdvo=\" />\r\n    <div style=\"width: 100%; height: 1px;\">\r\n    </div>\r\n    <div id=\"ctl00_ctl00_ctl00_MainContainer\" class=\"mainContainer\">\r\n        <div class=\"leftContainer\">\r\n            <div id=\"ctl00_ctl00_ctl00_TopBannerAdvertisementCMS\" class=\"topBanner\"><body docname=\"mtg_gatherer_banner_advertisement\" doclang=\"en\" xmlPath=\"\" useDate=\"11/17/2012\">\r\n  <a href=\"http://www.wizards.com/Magic/tcg/events.aspx?x=events/magic/fnm\" target=\"_blank\">\r\n    <img src=\"http://media.wizards.com/images/magic/daily/ads/20121029_fnm_728.jpg\" />\r\n  </a>\r\n\
+        <input type=\"hidden\" name=\"__EVENTVALIDATION\" id=\"__EVENTVALIDATION\" value=\"/wEWBgKBx/f1CgKw+7DyCgKKqPSlCQLIiJiWCgLgiMDeAwKBjNExzlwNG+VjazOiCGcrd1YqUcDjdvo=\" />\r\n    <div style=\"width: 100%; height: 1px;\">\r\n    </div>\r\n    <div id=\"ctl00_ctl00_ctl00_MainContainer\" class=\"mainContainer\">\r\n        <div class=\"leftContainer\">\r\n            <div id=\"ctl00_ctl00_ctl00_TopBannerAdvertisementCMS\" class=\"topBanner\"><body docname=\"mtg_gatherer_banner_advertisement\" doclang=\"zh\" xmlPath=\"\" useDate=\"2012/11/23\">\r\n  <a href=\"http://www.wizards.com/Magic/tcg/events.aspx?x=events/magic/fnm\" target=\"_blank\">\r\n    <img src=\"http://media.wizards.com/images/magic/daily/ads/20121029_fnm_728.jpg\" />\r\n  </a>\r\n\
         </body></div>\r\n            <div class=\"background\">\r\n                <div class=\"top\">\r\n                    <div class=\"left\">\r\n                    </div>\r\n                    <div class=\"middle\">\r\n                    </div>\r\n                    <div class=\"right\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"center\">\r\n                    <div class=\"middle\">\r\n                        <div class=\"middleright\">\r\n                            <div class=\"gathererContent\">\r\n                                \r\n\
         \r\n\
         <div class=\"logo\">\r\n    <a class=\"magic\" href=\"http://www.magicthegathering.com\"></a>\r\n\
@@ -305,5 +309,5 @@ http_interactions:
         </body>\r\n\
         </html>\r\n"
     http_version: "1.1"
-  recorded_at: Sat, 17 Nov 2012 17:18:23 GMT
+  recorded_at: Fri, 23 Nov 2012 22:31:35 GMT
 recorded_with: VCR 2.3.0

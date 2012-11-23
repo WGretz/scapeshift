@@ -2,11 +2,13 @@
 http_interactions: 
 - request: 
     method: get
-    uri: http://gatherer.wizards.com/Pages/Search/Default.aspx?name=+[Act]+[of]+[Aggression]
+    uri: http://gatherer.wizards.com/Pages/Search/Default.aspx?name=%2B%5B%22Act+of+Aggression%22%5D
     body: 
       encoding: US-ASCII
       string: ""
     headers: 
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept: 
       - "*/*"
       user-agent: 
@@ -17,7 +19,7 @@ http_interactions:
       message: Found
     headers: 
       date: 
-      - Sat, 17 Nov 2012 17:18:15 GMT
+      - Fri, 23 Nov 2012 22:31:27 GMT
       server: 
       - Microsoft-IIS/6.0
       x-powered-by: 
@@ -27,11 +29,11 @@ http_interactions:
       location: 
       - /Pages/Card/Details.aspx?multiverseid=230076
       set-cookie: 
-      - ASP.NET_SessionId=egpcap554mi5u155fszacj55; path=/; HttpOnly
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:15 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:15 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:15 GMT; path=/
-      - BIGipServerWWWNetPool02=4178577674.20480.0000; path=/
+      - ASP.NET_SessionId=zezhah45di4ks2uad0zgit45; path=/; HttpOnly
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:26 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:26 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:26 GMT; path=/
+      - BIGipServerWWWNetPool02=2769291530.20480.0000; path=/
       cache-control: 
       - private
       content-type: 
@@ -46,7 +48,7 @@ http_interactions:
         </body></html>
 
     http_version: "1.1"
-  recorded_at: Sat, 17 Nov 2012 17:18:16 GMT
+  recorded_at: Fri, 23 Nov 2012 22:31:27 GMT
 - request: 
     method: get
     uri: http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=230076
@@ -54,6 +56,8 @@ http_interactions:
       encoding: US-ASCII
       string: ""
     headers: 
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept: 
       - "*/*"
       user-agent: 
@@ -64,7 +68,7 @@ http_interactions:
       message: OK
     headers: 
       date: 
-      - Sat, 17 Nov 2012 17:18:16 GMT
+      - Fri, 23 Nov 2012 22:31:27 GMT
       server: 
       - Microsoft-IIS/6.0
       x-powered-by: 
@@ -72,17 +76,17 @@ http_interactions:
       x-aspnet-version: 
       - 2.0.50727
       set-cookie: 
-      - ASP.NET_SessionId=q2f4wurugpev1lmd2kawxb45; path=/; HttpOnly
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:16 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:16 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:16 GMT; path=/
-      - BIGipServerWWWNetPool02=2484078858.20480.0000; path=/
+      - ASP.NET_SessionId=i1ynmq55fnwkfj55rfgzmhet; path=/; HttpOnly
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:27 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:27 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:27 GMT; path=/
+      - BIGipServerWWWNetPool02=2232420618.20480.0000; path=/
       cache-control: 
       - private
       content-type: 
       - text/html; charset=utf-8
       content-length: 
-      - "41913"
+      - "41961"
     body: 
       encoding: US-ASCII
       string: |
@@ -108,7 +112,7 @@ http_interactions:
             pageTracker._trackPageview();
             } catch(err) {}
             </script>
-        <link type="text/css" rel="stylesheet" media="screen" href="../../Styles/Styles.css" /><link href="/WebResource.axd?d=GRnNg3t4K46DgrIFhLf_9NAuUGNb9hPC5E3VRvvs03EEanuwjppIYb1ygZbulkgS4u5w9pKS9Yy4Yj6i6DYt9MPjPepf71AnWzo4xZTSDC41&amp;amp;t=634873966152854778" rel="icon" type="image/ico" /></head>
+        <link type="text/css" rel="stylesheet" media="screen" href="../../Styles/Styles.css" /><link href="/WebResource.axd?d=or7PpBsqDI3hlaEEThlmVDRzePzSrFyHvCSdTElIIm8jbPXP5PySeVoGjKlN7Df_R8Yrdfm8DAtAevqXp4wu4Fffv7Dmtd4mn4Xjxa7bf43SyevX1NnB9KBh--rFBOmlJp3lTErOKCK5IJhfE-mweMernyA1&amp;amp;t=634873966152854778" rel="icon" type="image/ico" /></head>
         <body>
             
         
@@ -291,7 +295,7 @@ http_interactions:
             </div>
             <div id="ctl00_ctl00_ctl00_MainContainer" class="mainContainer">
                 <div class="leftContainer">
-                    <div id="ctl00_ctl00_ctl00_TopBannerAdvertisementCMS" class="topBanner"><body docname="mtg_gatherer_banner_advertisement" doclang="en" xmlPath="" useDate="11/17/2012">
+                    <div id="ctl00_ctl00_ctl00_TopBannerAdvertisementCMS" class="topBanner"><body docname="mtg_gatherer_banner_advertisement" doclang="en" xmlPath="" useDate="11/23/2012">
           <a href="http://www.wizards.com/Magic/tcg/events.aspx?x=events/magic/fnm" target="_blank">
             <img src="http://media.wizards.com/images/magic/daily/ads/20121029_fnm_728.jpg" />
           </a>
@@ -682,5 +686,5 @@ http_interactions:
         </html>
 
     http_version: "1.1"
-  recorded_at: Sat, 17 Nov 2012 17:18:17 GMT
+  recorded_at: Fri, 23 Nov 2012 22:31:29 GMT
 recorded_with: VCR 2.3.0

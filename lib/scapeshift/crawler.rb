@@ -1,3 +1,4 @@
+require 'scapeshift/gatherer_access'
 require 'scapeshift/crawlers'
 require 'scapeshift/card'
 require 'scapeshift/errors'
@@ -12,7 +13,7 @@ module Scapeshift
   # @example Scraping the Sets
   #   @sets = Scapeshift::Crawler.crawl :meta, :type => :sets
   # 
-  # @example Scraping all the cards from the Shards of Alara block
+  # @example Scraping all the cards from the Shards of Alara set
   #   @cards = Scapeshift::Crawler.crawl :cards, :set => 'Shards of Alara'
   #
   # @see Scapeshift::Crawlers::Meta

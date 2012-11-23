@@ -7,6 +7,8 @@ http_interactions:
       encoding: US-ASCII
       string: ""
     headers: 
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept: 
       - "*/*"
       user-agent: 
@@ -17,7 +19,7 @@ http_interactions:
       message: OK
     headers: 
       date: 
-      - Sat, 17 Nov 2012 17:18:14 GMT
+      - Fri, 23 Nov 2012 22:31:26 GMT
       server: 
       - Microsoft-IIS/6.0
       x-powered-by: 
@@ -25,11 +27,11 @@ http_interactions:
       x-aspnet-version: 
       - 2.0.50727
       set-cookie: 
-      - ASP.NET_SessionId=dbsyayjmjfm5dg45hpllfj45; path=/; HttpOnly
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:14 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:14 GMT; path=/
-      - CardDatabaseSettings=0=0; expires=Tue, 12-Nov-2013 17:18:14 GMT; path=/
-      - BIGipServerWWWNetPool02=4178577674.20480.0000; path=/
+      - ASP.NET_SessionId=4msnw1a5ktrhyrv1i0mbik45; path=/; HttpOnly
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:26 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:26 GMT; path=/
+      - CardDatabaseSettings=0=0; expires=Mon, 18-Nov-2013 22:31:26 GMT; path=/
+      - BIGipServerWWWNetPool02=2232420618.20480.0000; path=/
       cache-control: 
       - private
       content-type: 
@@ -170,7 +172,7 @@ http_interactions:
             </div>
             <div id="ctl00_ctl00_MainContainer" class="mainContainer">
                 <div class="leftContainer">
-                    <div id="ctl00_ctl00_TopBannerAdvertisementCMS" class="topBanner"><body docname="mtg_gatherer_banner_advertisement" doclang="en" xmlPath="" useDate="11/17/2012">
+                    <div id="ctl00_ctl00_TopBannerAdvertisementCMS" class="topBanner"><body docname="mtg_gatherer_banner_advertisement" doclang="en" xmlPath="" useDate="11/23/2012">
           <a href="http://www.wizards.com/Magic/tcg/events.aspx?x=events/magic/fnm" target="_blank">
             <img src="http://media.wizards.com/images/magic/daily/ads/20121029_fnm_728.jpg" />
           </a>
@@ -581,5 +583,5 @@ http_interactions:
         </html>
 
     http_version: "1.1"
-  recorded_at: Sat, 17 Nov 2012 17:18:15 GMT
+  recorded_at: Fri, 23 Nov 2012 22:31:26 GMT
 recorded_with: VCR 2.3.0
