@@ -39,6 +39,28 @@ make stuff work, you will need to start a subshell with
 
 Replacing `bash` with the shell of your choice, of course.
 
+TODO
+----
+
+* Caching
+* Scraping data issues
+    * [Double-faced cards](http://wiki.mtgsalvation.com/article/Double-faced_cards) - examples:
+        [Garruk Relentless // Garruk, the Veil-Cursed](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=245250),
+        [Delver of Secrets // Insectile Aberration](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=226749)
+    * [Flip cards](http://wiki.mtgsalvation.com/article/Flip_cards) - examples:
+        [Budoka Gardener // Dokai, Weaver of Life](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=78687),
+        [Nezumi Graverobber // Nighteyes the Desecrator](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=247175)
+    * [Split cards](http://wiki.mtgsalvation.com/article/Split_cards) - examples:
+        [Fire // Ice](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=292753),
+        [Research // Development](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=107375)
+    * [B.F.M. (Big Furry Monster)](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=9780)
+    * Infinite mana symbol - example: [Mox Lotus](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=74323)
+    * Half mana symbol - example: [Mons's Goblin Waiters](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=73957)
+    * Generic phyrexian mana symbol - example: [Rage Extractor](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=214385)
+    * [Color indicator](http://wiki.mtgsalvation.com/article/Color_indicator) - examples:
+        [Crimson Kobolds](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=201130),
+        [Evermind](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=74144)
+
 Documentation
 -------------
 
