@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'helper'
 
 class TestSingleCrawler < Test::Unit::TestCase
@@ -214,7 +215,7 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "Mox Lotus", @card.name
         assert_equal "15", @card.cost
         assert_equal "Artifact", @card.types
-        assert_equal "T : Add Infinity to your mana pool.\n 100 : Add one mana of any color to your mana pool.\nYou don't lose life due to mana burn.", @card.text
+        assert_equal "T : Add ∞ to your mana pool.\n 100 : Add one mana of any color to your mana pool.\nYou don't lose life due to mana burn.", @card.text
         assert_equal "Unhinged", @card.set
         assert_equal "Rare", @card.rarity
         assert_equal [["Unhinged", "Rare"]], @card.sets
@@ -243,7 +244,7 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "Mons's Goblin Waiters", @card.name
         assert_equal "R", @card.cost
         assert_equal "Creature - Goblin Waiter", @card.types
-        assert_equal "Sacrifice a creature or land: Add HalfR to your mana pool.", @card.text
+        assert_equal "Sacrifice a creature or land: Add o{1/2*R} to your mana pool.", @card.text
         assert_equal "Unhinged", @card.set
         assert_equal "Common", @card.rarity
         assert_equal [["Unhinged", "Common"]], @card.sets
@@ -272,7 +273,7 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "Rage Extractor", @card.name
         assert_equal "4(R/P)", @card.cost
         assert_equal "Artifact", @card.types
-        assert_equal "( (R/P) can be paid with either R or 2 life.)\nWhenever you cast a spell with (P) in its mana cost, Rage Extractor deals damage equal to that spell's converted mana cost to target creature or player.", @card.text
+        assert_equal "( (R/P) can be paid with either R or 2 life.)\nWhenever you cast a spell with P in its mana cost, Rage Extractor deals damage equal to that spell's converted mana cost to target creature or player.", @card.text
         assert_equal "New Phyrexia", @card.set
         assert_equal "Uncommon", @card.rarity
         assert_equal [["New Phyrexia", "Uncommon"]], @card.sets
