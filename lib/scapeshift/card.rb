@@ -134,6 +134,8 @@ module Scapeshift
         '(B/P)'
       when 'Phyrexian Green'
         '(G/P)'
+      when 'Phyrexian'
+        '(P)'
       # Dual Colors
       when 'Black or Red'
         '(B/R)'
@@ -164,6 +166,20 @@ module Scapeshift
       # Untap
       when 'Untap'
         'Q'
+      # Infinite
+      when 'Infinite'
+        'Infinity'
+      # Half a color
+      when 'Half a White'
+        'HalfW'
+      when 'Half a Red'
+        'HalfR'
+      when 'Half a Blue'
+        'HalfU'
+      when 'Half a Black'
+        'HalfB'
+      when 'Half a Green'
+        'HalfG'
       else
         raise Scapeshift::Errors::UnknownCostSymbol.new "Unrecognized cost '#{str}'"
       end

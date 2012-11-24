@@ -54,9 +54,6 @@ TODO
         [Fire // Ice](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=292753),
         [Research // Development](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=107375)
     * [B.F.M. (Big Furry Monster)](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=9780)
-    * Infinite mana symbol - example: [Mox Lotus](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=74323)
-    * Half mana symbol - example: [Mons's Goblin Waiters](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=73957)
-    * Generic phyrexian mana symbol - example: [Rage Extractor](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=214385)
     * [Color indicator](http://wiki.mtgsalvation.com/article/Color_indicator) - examples:
         [Crimson Kobolds](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=201130),
         [Evermind](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=74144)
