@@ -14,4 +14,4 @@ gem 'fakeweb'
 
 # Runtime dependencies
 gem 'nokogiri'
-
+gem 'activesupport'

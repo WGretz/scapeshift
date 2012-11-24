@@ -23,6 +23,44 @@ Usage is as simple as can be:
     # Grab a single named card
     @card = Scapeshift::Crawler.crawl :single, :name => 'Counterspell'
 
+Configuration
+-------------
+
+The gem can be easily configured with a `Scapeshift.configure` block (currently on the cache store option is available):
+
+    Scapeshift.configure do |config|
+      config.cache = :memory_store
+    end
+
+Caching
+-------
+
+By default requests to the Gatherer website are cached in memory using ActiveSupport's
+[MemoryStore](http://api.rubyonrails.org/classes/ActiveSupport/Cache/MemoryStore.html)
+but that can be easily configured.
+
+To change to a memcache server simply:
+
+    Scapeshift.configure do |config|
+      config.cache = :mem_cache_store, "cache-1.example.com", "cache-2.example.com"
+    end
+
+You will need to install the `memcache-client` gem to do so.
+
+You can also use an existing cache store by passing it as the cache option. For example in a Rails application you
+could:
+
+    Scapeshift.configure do |config|
+      config.cache = Rails.cache
+    end
+
+To disable caching *DO NOT* set the cache to `nil` as that will break stuff. Instead use the ActiveSupport's
+[NullStore](http://api.rubyonrails.org/classes/ActiveSupport/Cache/NullStore.html) that does the same thing but through
+the `ActiveSupport::Cache::Store` API.
+
+See the Rails [Caching Guide](http://guides.rubyonrails.org/caching_with_rails.html#cache-stores) for more info on
+configuring different cache stores.
+
 Development
 -----------
 
@@ -42,7 +80,6 @@ Replacing `bash` with the shell of your choice, of course.
 TODO
 ----
 
-* Caching
 * Scraping data issues
     * [Double-faced cards](http://wiki.mtgsalvation.com/article/Double-faced_cards) - examples:
         [Garruk Relentless // Garruk, the Veil-Cursed](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=245250),

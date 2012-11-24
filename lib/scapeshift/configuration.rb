@@ -1,3 +1,6 @@
+require 'active_support/cache'
+require 'active_support/cache/null_store'
+
 module Scapeshift
   class << self
     def configuration
@@ -10,7 +13,14 @@ module Scapeshift
   end
 
   class Configuration
+    attr_accessor :cache
+
     def initialize
+      self.cache = :memory_store
+    end
+
+    def cache=(*store_option)
+      @cache = ActiveSupport::Cache.lookup_store(*store_option)
     end
   end
 end

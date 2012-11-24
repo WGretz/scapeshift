@@ -114,10 +114,27 @@ module Scapeshift
     # @since 1.2.0
     #
     def get(path, query = {})
-      connection.start unless connection.started?
-      response = connection.get URI::Generic.build(:path => path, :query => to_query(query)).to_s
-      response = connection.get response['Location'] while response.is_a?(Net::HTTPRedirection)
+      response = get_with_cache URI::Generic.build(:path => path, :query => to_query(query)).to_s
+      response = get_with_cache response['Location'] while response.is_a?(Net::HTTPRedirection)
       response
+    end
+
+    ##
+    # Wrapper for making get requests to Gatherer through our cache.
+    #
+    # @author Eric Cohen
+    #
+    # @param [String] uri The uri to make a request to (eg. "/Pages/Default.aspx")
+    #
+    # @return [Net::HTTPResponse] The HTTP response object
+    #
+    # @since 1.2.0
+    #
+    def get_with_cache(uri)
+      Scapeshift.configuration.cache.fetch [:gatherer_access, :get, uri] do
+        connection.start unless connection.started?
+        connection.get uri
+      end
     end
 
     ##
