@@ -371,7 +371,7 @@ module Scapeshift
         # Mana image
         elsif node.is_a?(Nokogiri::XML::Element) and node.name == 'img'
           text << ' ' unless last_element == :img
-          text << Scapeshift::Card.cost_symbol_from_str(node['alt'])
+          text << "{#{Scapeshift::Card.cost_symbol_from_str(node['alt'])}}"
           last_element = :img
 
         # Keyword text
