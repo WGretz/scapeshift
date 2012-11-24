@@ -198,6 +198,93 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "26", @card.number
       end
     end
+
+    context "when a card with the infinite mana symbol in its text is supplied" do
+      setup do
+        VCR.use_cassette 'single/Mox Lotus' do
+          @card = Scapeshift::Crawler.crawl :single, :name => "Mox Lotus"
+        end
+      end
+
+      should "return a Card object" do
+        assert_instance_of Scapeshift::Card, @card
+      end
+
+      should "return the proper Card" do
+        assert_equal "Mox Lotus", @card.name
+        assert_equal "15", @card.cost
+        assert_equal "Artifact", @card.types
+        assert_equal "T : Add Infinity to your mana pool.\n 100 : Add one mana of any color to your mana pool.\nYou don't lose life due to mana burn.", @card.text
+        assert_equal "Unhinged", @card.set
+        assert_equal "Rare", @card.rarity
+        assert_equal [["Unhinged", "Rare"]], @card.sets
+        assert_equal "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=74323&type=card", @card.image_uri
+        assert_equal "74323", @card.multiverse_id
+        assert_equal nil, @card.pow
+        assert_equal nil, @card.tgh
+        assert_equal nil, @card.loyalty
+        assert_equal "Kevin Dobler", @card.artist
+        assert_equal "124", @card.number
+      end
+    end
+
+    context "when a card with a half mana symbol in its text is supplied" do
+      setup do
+        VCR.use_cassette 'single/Mons\'s Goblin Waiters' do
+          @card = Scapeshift::Crawler.crawl :single, :name => "Mons's Goblin Waiters"
+        end
+      end
+
+      should "return a Card object" do
+        assert_instance_of Scapeshift::Card, @card
+      end
+
+      should "return the proper Card" do
+        assert_equal "Mons's Goblin Waiters", @card.name
+        assert_equal "R", @card.cost
+        assert_equal "Creature - Goblin Waiter", @card.types
+        assert_equal "Sacrifice a creature or land: Add HalfR to your mana pool.", @card.text
+        assert_equal "Unhinged", @card.set
+        assert_equal "Common", @card.rarity
+        assert_equal [["Unhinged", "Common"]], @card.sets
+        assert_equal "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=73957&type=card", @card.image_uri
+        assert_equal "73957", @card.multiverse_id
+        assert_equal "1", @card.pow
+        assert_equal "1", @card.tgh
+        assert_equal nil, @card.loyalty
+        assert_equal "Pete Venters", @card.artist
+        assert_equal "82", @card.number
+      end
+    end
+
+    context "when a card with the generic phyrexian mana symbol in its text is supplied" do
+      setup do
+        VCR.use_cassette 'single/Rage Extractor' do
+          @card = Scapeshift::Crawler.crawl :single, :name => "Rage Extractor"
+        end
+      end
+
+      should "return a Card object" do
+        assert_instance_of Scapeshift::Card, @card
+      end
+
+      should "return the proper Card" do
+        assert_equal "Rage Extractor", @card.name
+        assert_equal "4(R/P)", @card.cost
+        assert_equal "Artifact", @card.types
+        assert_equal "( (R/P) can be paid with either R or 2 life.)\nWhenever you cast a spell with (P) in its mana cost, Rage Extractor deals damage equal to that spell's converted mana cost to target creature or player.", @card.text
+        assert_equal "New Phyrexia", @card.set
+        assert_equal "Uncommon", @card.rarity
+        assert_equal [["New Phyrexia", "Uncommon"]], @card.sets
+        assert_equal "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214385&type=card", @card.image_uri
+        assert_equal "214385", @card.multiverse_id
+        assert_equal nil, @card.pow
+        assert_equal nil, @card.tgh
+        assert_equal nil, @card.loyalty
+        assert_equal "Raymond Swanland", @card.artist
+        assert_equal "91", @card.number
+      end
+    end
   end
 end
 
