@@ -1,3 +1,4 @@
+require 'scapeshift/configuration'
 require 'scapeshift/crawler'
 
 ##
