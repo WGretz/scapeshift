@@ -14,23 +14,27 @@ Usage
 
 Usage is as simple as can be:
 
-    # Grab the complete list of expansion sets
-    @sets = Scapeshift::Crawler.crawl :meta, :type => :sets
+```ruby
+# Grab the complete list of expansion sets
+@sets = Scapeshift::Crawler.crawl :meta, :type => :sets
 
-    # Grab the card set for an expansion
-    @alara_cards = Scapeshift::Crawler.crawl :cards, :set => 'Shards of Alara'
+# Grab the card set for an expansion
+@alara_cards = Scapeshift::Crawler.crawl :cards, :set => 'Shards of Alara'
 
-    # Grab a single named card
-    @card = Scapeshift::Crawler.crawl :single, :name => 'Counterspell'
+# Grab a single named card
+@card = Scapeshift::Crawler.crawl :single, :name => 'Counterspell'
+```
 
 Configuration
 -------------
 
 The gem can be easily configured with a `Scapeshift.configure` block (currently on the cache store option is available):
 
-    Scapeshift.configure do |config|
-      config.cache = :memory_store
-    end
+```ruby
+Scapeshift.configure do |config|
+  config.cache = :memory_store
+end
+```
 
 Caching
 -------
@@ -41,18 +45,22 @@ but that can be easily configured.
 
 To change to a memcache server simply:
 
-    Scapeshift.configure do |config|
-      config.cache = :mem_cache_store, "cache-1.example.com", "cache-2.example.com"
-    end
+```ruby
+Scapeshift.configure do |config|
+  config.cache = :mem_cache_store, "cache-1.example.com", "cache-2.example.com"
+end
+```
 
 You will need to install the `memcache-client` gem to do so.
 
 You can also use an existing cache store by passing it as the cache option. For example in a Rails application you
 could:
 
-    Scapeshift.configure do |config|
-      config.cache = Rails.cache
-    end
+```ruby
+Scapeshift.configure do |config|
+  config.cache = Rails.cache
+end
+```
 
 To disable caching *DO NOT* set the cache to `nil` as that will break stuff. Instead use the ActiveSupport's
 [NullStore](http://api.rubyonrails.org/classes/ActiveSupport/Cache/NullStore.html) that does the same thing but through
