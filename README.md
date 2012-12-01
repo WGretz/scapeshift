@@ -102,6 +102,13 @@ TODO
     * [Color indicator](http://wiki.mtgsalvation.com/article/Color_indicator) - examples:
         [Crimson Kobolds](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=201130),
         [Evermind](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=74144)
+    * [Watermark](http://wiki.mtgsalvation.com/article/Watermark) - examples:
+        [Plague Myr](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=213785),
+        [Agrus Kos, Wojek Veteran](http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=89101)
+    * Rulings
+    * Legality
+    * Ratings
+    * Comments
 
 Documentation
 -------------
