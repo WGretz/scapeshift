@@ -232,17 +232,21 @@ module Scapeshift
       # @since 0.2.0
       #
       def _parse_sets doc
-        regex = /^(.*?) \((.*?)\)$/
+        title_regex = /^(.*?) \((.*?)\)$/
+        src_regex = /&set=(.*?)&/
         sets_ary = []
 
-        current = doc.css('div#ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_setRow')./('img').first['title']
-        current =~ regex
-        sets_ary << [$1, $2]
+        current = doc.css('div#ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_setRow')./('img').first
+        title_match = current['title'].match title_regex
+        src_match = current['src'].match src_regex
+
+        sets_ary << [title_match[1], src_match[1], title_match[2]]
 
         others = doc.css('div#ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_otherSetsRow')./('img')
         others.each do |other|
-          other['title'] =~ regex
-          sets_ary << [$1, $2]
+          title_match = other['title'].match title_regex
+          src_match = other['src'].match src_regex
+          sets_ary << [title_match[1], src_match[1], title_match[2]]
         end
 
         sets_ary.uniq!

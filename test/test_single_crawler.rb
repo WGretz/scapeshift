@@ -59,8 +59,8 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "\"Wrath is no vice when inflicted upon the deserving.\"", @card.flavour_text
         assert_equal "Duel Decks: Divine vs. Demonic", @card.set
         assert_equal "Mythic Rare", @card.rarity
-        assert_equal [["Duel Decks: Divine vs. Demonic", "Mythic Rare"], ["Legions", "Rare"], 
-          ['Time Spiral "Timeshifted"', "Special"]], @card.sets
+        assert_equal [["Duel Decks: Divine vs. Demonic", "DDC", "Mythic Rare"], ["Legions", "LGN", "Rare"],
+          ['Time Spiral "Timeshifted"', "TSB", "Special"]], @card.sets
         assert_equal "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193871&type=card", @card.image_uri
         assert_equal "193871", @card.multiverse_id
         assert_equal "6", @card.pow
@@ -93,8 +93,8 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "+2: Each player draws a card.\n-1: Target player draws a card.\n-10: Target player puts the top twenty cards of his or her library into his or her graveyard.", @card.text
         assert_equal "Magic 2011", @card.set
         assert_equal "Mythic Rare", @card.rarity
-        assert_equal [["Magic 2011", "Mythic Rare"], ["Magic 2010", "Mythic Rare"], ["Lorwyn", "Rare"],
-          ["Duel Decks: Jace vs. Chandra", "Mythic Rare"]], @card.sets
+        assert_equal [["Magic 2011", "M11", "Mythic Rare"], ["Magic 2010", "M10", "Mythic Rare"],
+                      ["Lorwyn", "LRW", "Rare"], ["Duel Decks: Jace vs. Chandra", "DD2", "Mythic Rare"]], @card.sets
         assert_equal "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205960&type=card", @card.image_uri
         assert_equal "205960", @card.multiverse_id
         assert_equal nil, @card.pow
@@ -127,7 +127,7 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "( {(2/B)} can be paid with any two mana or with {B} . This card's converted mana cost is 6.)\nSearch your library for a card with converted mana cost less than or equal to the number of lands you control, reveal it, and put it into your hand. Then shuffle your library.", @card.text
         assert_equal "Planechase", @card.set
         assert_equal "Uncommon", @card.rarity
-        assert_equal [["Planechase", "Uncommon"], ["Shadowmoor", "Uncommon"]], @card.sets
+        assert_equal [["Planechase", "HOP", "Uncommon"], ["Shadowmoor", "SHM", "Uncommon"]], @card.sets
         assert_equal "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205399&type=card", @card.image_uri
         assert_equal "205399", @card.multiverse_id
         assert_equal nil, @card.pow
@@ -160,7 +160,7 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "( {(R/P)} can be paid with either {R} or 2 life.)\nGain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.", @card.text
         assert_equal "New Phyrexia", @card.set
         assert_equal "Uncommon", @card.rarity
-        assert_equal [["New Phyrexia", "Uncommon"]], @card.sets
+        assert_equal [["New Phyrexia", "NPH", "Uncommon"]], @card.sets
         assert_equal "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=230076&type=card", @card.image_uri
         assert_equal "230076", @card.multiverse_id
         assert_equal nil, @card.pow
@@ -189,7 +189,7 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "Flying\n {1}{S}i} : Target creature loses flying until end of turn.( {S}i} can be paid with one mana from a snow permanent.)", @card.text
         assert_equal "Coldsnap", @card.set
         assert_equal "Uncommon", @card.rarity
-        assert_equal [["Coldsnap", "Uncommon"]], @card.sets
+        assert_equal [["Coldsnap", "CSP", "Uncommon"]], @card.sets
         assert_equal "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=121268&type=card", @card.image_uri
         assert_equal "121268", @card.multiverse_id
         assert_equal "3", @card.pow
@@ -218,7 +218,7 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "{T} : Add {∞} to your mana pool.\n {100} : Add one mana of any color to your mana pool.\nYou don't lose life due to mana burn.", @card.text
         assert_equal "Unhinged", @card.set
         assert_equal "Rare", @card.rarity
-        assert_equal [["Unhinged", "Rare"]], @card.sets
+        assert_equal [["Unhinged", "UNH", "Rare"]], @card.sets
         assert_equal "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=74323&type=card", @card.image_uri
         assert_equal "74323", @card.multiverse_id
         assert_equal nil, @card.pow
@@ -247,7 +247,7 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "Sacrifice a creature or land: Add {o{1/2*R}} to your mana pool.", @card.text
         assert_equal "Unhinged", @card.set
         assert_equal "Common", @card.rarity
-        assert_equal [["Unhinged", "Common"]], @card.sets
+        assert_equal [["Unhinged", "UNH", "Common"]], @card.sets
         assert_equal "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=73957&type=card", @card.image_uri
         assert_equal "73957", @card.multiverse_id
         assert_equal "1", @card.pow
@@ -276,7 +276,7 @@ class TestSingleCrawler < Test::Unit::TestCase
         assert_equal "( {(R/P)} can be paid with either {R} or 2 life.)\nWhenever you cast a spell with {P} in its mana cost, Rage Extractor deals damage equal to that spell's converted mana cost to target creature or player.", @card.text
         assert_equal "New Phyrexia", @card.set
         assert_equal "Uncommon", @card.rarity
-        assert_equal [["New Phyrexia", "Uncommon"]], @card.sets
+        assert_equal [["New Phyrexia", "NPH", "Uncommon"]], @card.sets
         assert_equal "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214385&type=card", @card.image_uri
         assert_equal "214385", @card.multiverse_id
         assert_equal nil, @card.pow

@@ -54,7 +54,7 @@ module Scapeshift
     ## @return [String] The card's flavour text
     attr_accessor :flavour_text
 
-    ## @return [Array [[Set, Rarity]]] The sets and rarities of this card. 
+    ## @return [Array [[Set, Set Code, Rarity]]] The sets and rarities of this card.
     attr_accessor :sets
 
     ## @return [String] The interpolated Image_URI string
@@ -314,7 +314,7 @@ module Scapeshift
     # @since 0.1.0
     #
     def rarity
-      self.sets.first[1]
+      self.sets.first[2]
     end
 
     ##
@@ -328,6 +328,19 @@ module Scapeshift
     #
     def set
       self.sets.first[0]
+    end
+
+    ##
+    # The most recent set code this card appeared in.
+    #
+    # @return [String] The set code.
+    #
+    # @author Eric Cohen
+    #
+    # @since 1.2.0
+    #
+    def set_code
+      self.sets.first[1]
     end
 
     ##

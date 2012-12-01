@@ -41,12 +41,16 @@ class CardTest < Test::Unit::TestCase
 
     context "with several sets and rarities" do
       setup do
-        printings = [["Magic 2010", "Rare"], ["Tenth Edition", "Uncommon"]]
+        printings = [["Magic 2010", "M10", "Rare"], ["Tenth Edition", "10E", "Uncommon"]]
         @card = Scapeshift::Card.new :sets => printings
       end
 
       should "display its most recent set" do
         assert_equal "Magic 2010", @card.set
+      end
+
+      should "display its most recent set code" do
+        assert_equal "M10", @card.set_code
       end
 
       should "display its most recent rarity" do
@@ -58,7 +62,7 @@ class CardTest < Test::Unit::TestCase
       setup do
         @params = { :name => "Mind Spring", :cost => "XBB",
           :types => "Sorcery", :text => "Draw X cards.",
-          :sets => [["Magic 2010", "Rare"], ["Morningtide", "Rare"]],
+          :sets => [["Magic 2010", "M10", "Rare"], ["Morningtide", "10E", "Rare"]],
           :image_id => 191323 }
 
         @card = Scapeshift::Card.new @params
